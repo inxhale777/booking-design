@@ -1,0 +1,54 @@
+linters-settings:
+  errcheck:
+    exclude-functions:
+      - (*github.com/gin-gonic/gin.Context).AbortWithError
+  goimports:
+    local-prefixes: booking-design/
+  gci:
+    local-prefixes: booking-design/
+  revive:
+    rules:
+      - name: blank-imports
+      - name: context-as-argument
+      - name: context-keys-type
+      - name: dot-imports
+      - name: error-return
+      - name: error-strings
+      - name: error-naming
+      - name: exported
+      - name: increment-decrement
+      - name: var-naming
+      - name: var-declaration
+      - name: package-comments
+      - name: range
+      - name: receiver-naming
+      - name: time-naming
+      - name: indent-error-flow
+      - name: empty-block
+      - name: superfluous-else
+      - name: unused-parameter
+      - name: unreachable-code
+      - name: redefines-builtin-id
+      - name: early-return
+      - name: defer
+      - name: useless-break
+      - name: datarace
+
+linters:
+  enable:
+    - errcheck
+    - gosimple
+    - govet
+    - ineffassign
+    - staticcheck
+    - unused
+    - goimports
+    - asciicheck
+    - bodyclose
+    - gocritic
+    - gofmt
+    - goimports
+    - gci
+    - nilnil
+    - revive
+    - nilerr
